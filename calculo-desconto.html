@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+        /* Ex3 - Cálculo do desconto:
+
+        Solicite ao usuário que digite o valor do produto.
+        Armazene o valor em uma variável.
+        Verifique se o valor é maior que R$ 50,00.
+        Se o valor for maior que R$ 50,00, calcule o desconto de 10% sobre o valor e exiba o
+        novo valor com desconto.
+        Caso contrário, exiba a mensagem "Não há desconto para este produto" */
+
+        var valor = parseFloat(prompt("Digite o valor do produto: "));
+
+        if(valor > 50) {
+            var novoValor = valor - (valor * 0.1);
+            document.write("Produto tem deconto de 10%, valor atualizado: R$" +  novoValor.toFixed(2));
+        } else {
+            document.write("Não há desconto para este produto");
+        }
+        
+    </script>
+</body>
+</html>
