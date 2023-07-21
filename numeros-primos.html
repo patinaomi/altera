@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+        /* Verificação de número primo:
+
+        - Solicite ao usuário que digite um número.
+        - Armazene o número em uma variável.
+        - Verifique se o número é primo.
+        - Se o número for primo, exiba a mensagem "O número é primo".
+        - Caso contrário, exiba a mensagem "O número não é primo". */
+
+        var numero = parseInt(prompt("Digite um número de 1 a 100:"));
+        var contador = 0;
+
+        if(numero < 0 || numero > 100) {
+            document.write("Digite um número de 1 a 100");
+
+        }
+        
+        if(numero %1 == 0) {
+            contador++;
+        } else if(numero %2 == 0) {
+            contador++;
+        } else if(numero %3 == 0) {
+            contador++;
+        } else if(numero %5 == 0) {
+            contador++;
+        } 
+
+        if(contador >= 2) {
+            document.write("Não é primo");
+        } else {
+            document.write("primo");
+        }
+        
+    </script>
+</body>
+</html>
