@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+    /* Conversão de moedas:
+
+    - Solicite ao usuário que digite um valor em reais.
+    - Armazene o valor em uma variável.
+    - Solicite ao usuário que digite a cotação do dólar.
+    - Armazene a cotação em uma variável.
+    - Converta o valor em reais para dólares utilizando a fórmula: valor em dólares = valor em
+    reais / cotação.
+    - Exiba o valor em dólares. */
+
+    var valorReal = parseFloat(prompt("Digite um valor em reais:"));
+    var cotacaoDolar = parseFloat(prompt("Digite a cotação do dólar:"));
+
+    var valorDolar = valorReal / cotacaoDolar;
+
+    document.write("R$" + valorReal + " convertidos em dólar na cotação atual: U$" + valorDolar.toFixed(2));
+
+  
+    </script>
+</body>
+</html>

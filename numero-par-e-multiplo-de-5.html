@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+    /* Verificação de número par e múltiplo de 5:
+
+    - Solicite ao usuário que digite um número.
+    - Armazene o número em uma variável.
+    - Verifique se o número é par e múltiplo de 5.
+    - Se o número for par e múltiplo de 5, exiba a mensagem "O número é par e múltiplo de 5".
+    - Caso contrário, exiba a mensagem "O número não atende aos critérios". */
+            
+    var numero = parseInt(prompt("Digite um número:"));
+
+    if(numero %2 == 0 && numero %5 == 0) {
+        document.write("O número " + numero + " é par e múltiplo de 5.");
+    } else {
+        document.write("O número " + numero + " não atende aos critérios.");
+    }
+    
+    </script>
+</body>
+</html>

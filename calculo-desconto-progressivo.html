@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+    /* Cálculo de desconto progressivo:
+    Desenvolva um programa que realize o cálculo de desconto progressivo em um produto, de
+    acordo com a seguinte tabela:
+
+    - Para valores menores ou iguais a R$ 50,00, não há desconto.
+    - Para valores entre R$ 50,01 e R$ 100,00, o desconto é de 5%.
+    - Para valores entre R$ 100,01 e R$ 200,00, o desconto é de 10%.
+    - Para valores acima de R$ 200,00, o desconto é de 15%.
+        
+    O programa deve solicitar ao usuário que digite o valor do produto e, em seguida, calcular o valor
+    do desconto e o valor final do produto com desconto. Ao final, o programa deve exibir o valor
+    original do produto, o valor do desconto e o valor final com desconto.
+    
+    - Exemplo de saída:**
+        
+    Digite o valor do produto: 120.50
+    Valor original do produto: R$ 120.50 Valor do desconto: R$ 12.05 Valor final com desconto: R$
+    108.45 */
+        
+    var valorProduto = parseFloat(prompt("Digite o valor do produto: "));
+    
+    if(valorProduto < 50) {
+        document.write("Valor original do produto: R$" + valorProduto);
+        document.write("<br>O produto não tem desconto.");
+
+    } else if(valorProduto > 50.01 && valorProduto < 100) {
+        document.write("Valor original do produto: R$" + valorProduto);
+        document.write("<br>Valor do desconto: R$" + (valorProduto * 0.05));
+        document.write("<br><b>Valor final com desconto:</b> R$" + (valorProduto - (valorProduto * 0.05)));
+
+    } else if(valorProduto > 100.01 && valorProduto < 200) {
+        document.write("Valor original do produto: R$" + valorProduto);
+        document.write("<br>Valor do desconto: R$" + (valorProduto * 0.10));
+        document.write("<br><b>Valor final com desconto:</b> R$" + (valorProduto - (valorProduto * 0.05)));
+
+    } else {
+        document.write("Valor original do produto: R$" + valorProduto);
+        document.write("<br>Valor do desconto: R$" + (valorProduto * 0.15));
+        document.write("<br><b>Valor final com desconto:</b> R$" + (valorProduto - (valorProduto * 0.05)));
+
+    }
+
+    </script>
+</body>
+</html>

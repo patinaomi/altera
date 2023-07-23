@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+    /* Verificação de triângulo:
+
+    - Solicite ao usuário que digite três valores que representam os lados de um triângulo.
+    - Armazene os valores em variáveis.
+    - Verifique se os valores formam um triângulo.
+    - Se os valores formarem um triângulo, exiba a mensagem "Os valores formam um triângulo".   
+    - Caso contrário, exiba a mensagem "Os valores não formam um triângulo".
+
+    OBSERVAÇÃO:
+    pra formar um triângulo, a soma de dois lados tem que ser sempre MENOR que o terceiro lado */
+
+        var a = parseFloat(prompt("Digite o primeiro lado do triângulo:"));
+        var b = parseFloat(prompt("Digite o segundo lado do triângulo:"));
+        var c = parseFloat(prompt("Digite o terceiro lado do triângulo:"));
+
+        if((a < b+c) && (b < a+c) && (c < a+b)) {
+            document.write("Os valores formam um triângulo.")
+        } else {
+            document.write("Os valores não formam um triângulo.")
+        }
+  
+    </script>
+</body>
+</html>

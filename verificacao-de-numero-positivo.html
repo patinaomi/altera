@@ -9,21 +9,20 @@
 <body>
     
     <script>
-        /*Ex 3 - Verificação de idade:
+        /*Ex 1- Verificação de número positivo:
 
-        Solicite ao usuário que digite sua idade.
-        Armazene a idade em uma variável.
-        Verifique se a idade é maior ou igual a 18 anos.
-        Se a idade for maior ou igual a 18 anos, exiba a mensagem "Você pode dirigir".
-        Caso contrário, exiba a mensagem "Você não pode dirigir". */
+        Solicite ao usuário que digite um número.
+        Armazene o número em uma variável.
+        Verifique se o número é positivo.
+        Se o número for positivo, exiba a mensagem "O número é positivo".
+        Caso contrário, exiba a mensagem "O número é negativo".*/
 
-        var nome = prompt("Olá, qual seu nome? ");
-        var idade = parseInt(prompt(nome + ", digite a sua idade: "));
+        var numero = parseInt(prompt("Digite um número: "));
 
-        if(idade >= 18) {
-            document.write(nome + ", você pode dirigir.");
+        if(numero > 0) {
+            document.write("O número é positivo.");
         } else {
-            document.write(nome + ", você não pode dirigir.");
+            document.write("O número é negativo.");
         }
         
     </script>

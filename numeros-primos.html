@@ -19,28 +19,26 @@
 
         var numero = parseInt(prompt("Digite um número de 1 a 100:"));
         var contador = 0;
+        var i = 1;
 
         if(numero < 0 || numero > 100) {
-            document.write("Digite um número de 1 a 100");
-
-        }
-        
-        if(numero %1 == 0) {
-            contador++;
-        } else if(numero %2 == 0) {
-            contador++;
-        } else if(numero %3 == 0) {
-            contador++;
-        } else if(numero %5 == 0) {
-            contador++;
-        } 
-
-        if(contador >= 2) {
-            document.write("Não é primo");
+            alert("Digite um número de 1 a 100");
         } else {
-            document.write("primo");
+
+            while (i <= numero) {
+                if(numero %i == 0) {
+                    contador++;
+                }
+                i++;
+            }
+    
+            if(contador > 2) {
+                document.write("O número " + numero + " <b>não</b> é primo.");
+            } else {
+                document.write("O número " + numero + " é primo.");
+            }
         }
-        
-    </script>
+    
+        </script>
 </body>
 </html>
