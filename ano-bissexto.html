@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+   /* Verificação de ano bissexto:
+
+    - Solicite ao usuário que digite um ano.
+    - Armazene o ano em uma variável.
+    - Verifique se o ano é bissexto de acordo com as seguintes regras:
+    - Anos divisíveis por 4 são bissextos.
+    - Anos divisíveis por 100 não são bissextos, exceto os anos divisíveis por 400.
+    - Se o ano for bissexto, exiba a mensagem "O ano é bissexto".
+    - Caso contrário, exiba a mensagem "O ano não é bissexto". */
+
+    var ano = parseInt(prompt("Digite um ano:"));
+
+    if((ano %4 == 0) && (ano %100!= 0) || (ano %400 == 0)) {
+        document.write("O ano " + ano + " é bissexto.");
+    } else {
+        document.write("O ano " + ano + " não é bissexto.");
+    }
+
+    </script>
+</body>
+</html>
