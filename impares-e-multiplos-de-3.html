@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+    /* Soma de ímpares e múltiplos de 3
+
+    - Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de três e que se encontram no conjunto dos números de 1
+    até 500. */
+
+    //exercício feito com while
+    var i = 0;
+    var soma = 0;
+
+     while(i <= 500) {
+         if(i %2!=0 && i%3 ==0) {
+             soma+= i;
+         }
+         i++;
+    }
+    document.write("Resultado:" + soma);
+
+    //exercício feito com for
+    var somaTotal = 0;
+    for(var contador=0; contador<=500; contador = contador+3) {
+        if(contador %2 != 0) {
+            somaTotal += contador;
+        }
+    }
+
+    document.write("<br>Resultado:" + somaTotal);
+
+    </script>
+</body>
+</html>

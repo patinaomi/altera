@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html hang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividades JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+   /* Maior e menor
+
+    - Desenvolver um algoritmo que leia a altura de 15 pessoas. Este programa
+    deverá calcular e mostrar:
+    A menor altura do grupo;
+    A maior altura do grupo; */
+
+    var maiorAltura = 0;
+    var menorAltura = 0;
+
+    for(var contador=1; contador<=5; contador++) {
+        var altura = parseFloat(prompt("Digite a " + contador + "ª altura"));
+        
+        if(contador == 1) {
+            maiorAltura = altura;
+            menorAltura = altura;
+        } else {
+            if(altura > maiorAltura) {
+                maiorAltura = altura;
+            }
+            if(altura < menorAltura) {
+                menorAltura = altura;
+            }
+        }    
+    }
+
+    document.write("Menor altura:" + menorAltura);
+    document.write("<br>Maior altura:" + maiorAltura);
+
+    </script>
+</body>
+</html>
