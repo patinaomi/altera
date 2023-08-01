@@ -9,7 +9,7 @@
 <body>
     
     <script>
-   /* Verificação de ano bissexto:
+        /* Verificação de ano bissexto:
 
     - Solicite ao usuário que digite um ano.
     - Armazene o ano em uma variável.
@@ -19,6 +19,7 @@
     - Se o ano for bissexto, exiba a mensagem "O ano é bissexto".
     - Caso contrário, exiba a mensagem "O ano não é bissexto". */
 
+
     var ano = parseInt(prompt("Digite um ano:"));
 
     if((ano %4 == 0) && (ano %100!= 0) || (ano %400 == 0)) {
@@ -26,7 +27,7 @@
     } else {
         document.write("O ano " + ano + " não é bissexto.");
     }
-
+        
     </script>
 </body>
 </html>
