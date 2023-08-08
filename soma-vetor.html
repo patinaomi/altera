@@ -16,20 +16,22 @@
 
     vetor = new Array(10);
     var numero = "";
+    var somaVetor = 0;
 
     for(var i=0; i<vetor.length; i++) {
         vetor[i] = prompt("Digite o número da posição " + i + ":");
         
         numero += "[" + vetor[i] + "] ";
         
-        var somaVetor = vetor.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    }
+
+    for(var i in vetor) {
+        somaVetor += vetor[i];
     }
 
     
     document.writeln("Resultado números: " + numero);
     document.write("Soma números :" + somaVetor);
-
-    console.log(somaVetor);
 
     </script>
 </body>
